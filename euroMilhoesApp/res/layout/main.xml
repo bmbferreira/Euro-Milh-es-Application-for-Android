@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:weightSum="1"
+	android:background="@drawable/eurowallpaper" android:orientation="vertical"
+	android:layout_height="fill_parent">
+	<ScrollView android:layout_height="wrap_content" android:id="@+id/scrollView1"
+		android:layout_width="fill_parent">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:weightSum="1" android:background="@drawable/eurowallpaper"
+			android:orientation="vertical">
+			<ImageView android:layout_height="170dp" android:id="@+id/imageView1"
+				android:src="@drawable/logo_euromilhoes_150" android:layout_width="fill_parent"></ImageView>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/tableRow3"
+				android:gravity="center">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textViewResultado" android:text=""
+					android:textStyle="bold"></TextView>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/tableRow2"
+				android:gravity="center">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textViewResBalls" android:text="_"
+					android:layout_gravity="center" android:layout_marginBottom="25dp"
+					android:layout_marginTop="5dp"></TextView>
+				<TextView android:text="+" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textViewPlus2" android:layout_gravity="center"
+					android:layout_marginBottom="25dp" android:layout_marginTop="5dp"></TextView>
+				<TextView android:text="_" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textViewResStars" android:textColor="@color/yellow_Star"
+					android:layout_gravity="center" android:layout_marginBottom="25dp"
+					android:layout_marginTop="5dp"></TextView>
+			</TableRow>
+			<Button android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" android:layout_marginTop="5dp"
+				android:id="@+id/button1" android:layout_width="260dp" android:text="Gerar Chave"
+				android:layout_marginBottom="15dp"></Button>
+			<TableRow android:layout_width="fill_parent" android:gravity="center"
+				android:layout_height="wrap_content" android:id="@+id/tableRow1">
+				<TextView android:text="_" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textView1" android:maxLength="2"
+					android:layout_gravity="center"
+					android:layout_marginRight="5dp"></TextView>
+				<TextView android:text="_" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textView2" android:maxLength="2"
+					android:layout_gravity="center" android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"></TextView>
+				<TextView android:text="_" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textView3" android:maxLength="2"
+					android:layout_gravity="center" android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"></TextView>
+				<TextView android:text="_" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textView4" android:maxLength="2"
+					android:layout_gravity="center" android:layout_marginLeft="5dp"
+					android:layout_marginRight="5dp"></TextView>
+				<TextView android:text="_" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textView5" android:maxLength="2"
+					android:layout_gravity="center" android:layout_marginLeft="5dp"></TextView>
+				<TextView android:text="+" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textViewPlus" android:layout_marginLeft="10dp"
+					android:layout_gravity="center" android:layout_marginRight="10dp"></TextView>
+				<TextView android:text="_" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textViewStar1" android:maxLength="2"
+					android:layout_gravity="center" android:layout_marginRight="5dp"
+					android:textColor="@color/yellow_Star"></TextView>
+				<TextView android:text="_" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+					android:id="@+id/textViewStar2" android:maxLength="2"
+					android:layout_gravity="center" android:layout_marginLeft="5dp"
+					android:textColor="@color/yellow_Star"></TextView>
+			</TableRow>
+			<Button android:id="@+id/button2" android:text="Estatísticas"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+				android:layout_width="260dp" android:layout_marginTop="50dp"></Button>
+			<Button android:id="@+id/button3" android:text="Actualizar"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+				android:layout_width="260dp" android:layout_marginTop="50dp"></Button>
+			<Button android:id="@+id/button4" android:text="Sobre"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+				android:layout_width="260dp" android:layout_marginTop="50dp"></Button>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

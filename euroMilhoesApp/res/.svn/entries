@@ -1,0 +1,80 @@
+10
+
+dir
+135
+https://svn.assembla.com/svn/espacoandroid/AboutCPA/AboutCPA/trunk/res
+https://svn.assembla.com/svn/espacoandroid
+
+
+
+2011-07-10T16:51:04.428443Z
+134
+pedrodh
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+3b2dbcf1-1658-4408-b67c-f0a812a96c7d
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+
+
+add
+
+layout
+dir
+
+layout-land
+dir
+
+layout-port
+dir
+
+layout-xlarge-land
+dir
+
+
+
+add
+
+layout-xlarge-port
+dir
+
+
+
+add
+
+values
+dir
+
+values-hdpi
+dir
+
+values-xlarge
+dir
+
+
+
+add
+

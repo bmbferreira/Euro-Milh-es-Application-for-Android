@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="cpa_logo_vsep">20dip</dimen>
+    <dimen name="cpa_title_size">20dip</dimen>
+    <dimen name="cpa_disclamer_size">15dip</dimen>
+</resources>

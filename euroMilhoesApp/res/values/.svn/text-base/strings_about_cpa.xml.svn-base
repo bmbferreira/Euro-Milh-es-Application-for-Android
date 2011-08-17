@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AboutCPA</string>
+
+    <string name="cpa_about">Esta aplicação foi elaborada para o Concurso de Programação Android 2011.
+        A propriedade intelectual da aplicação e direitos da mesma continuam a pertencer a [SUBSTITUIR].\n As
+        seguintes marcas foram patrocinadoras do evento:</string>
+</resources>

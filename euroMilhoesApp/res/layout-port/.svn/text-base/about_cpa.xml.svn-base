@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ImageView
+            android:id="@+id/cpa_cpalogo" android:layout_width="match_parent"
+               android:layout_height="wrap_content" android:src="@drawable/cpa"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+            />
+
+
+    <TextView android:id="@+id/cpa_title_app_name" android:layout_width="wrap_content"
+               android:layout_height="wrap_content" android:textColor="@android:color/white"
+               android:text="@string/app_name"
+               android:textStyle="bold" android:textSize="@dimen/cpa_title_size"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/cpa_cpalogo" android:layout_marginTop="10dip"
+            />
+
+    <TextView android:id="@+id/cpa_disclamer" android:layout_width="wrap_content"
+               android:layout_height="wrap_content" android:textColor="@android:color/white"
+               android:text="@string/cpa_about"
+               android:textSize="@dimen/cpa_disclamer_size"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@id/cpa_title_app_name" android:layout_marginTop="10dip"
+            />
+
+    <ImageView
+            android:id="@+id/cpa_samsunglogo" android:layout_width="wrap_content"
+               android:layout_height="50dip" android:src="@drawable/samsung"
+            android:layout_below="@id/cpa_disclamer" android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/cpa_logo_vsep"
+            />
+
+
+    <TextView android:id="@+id/cpa_dummy_sep" android:layout_width="1dip"
+               android:layout_below="@id/cpa_samsunglogo"
+               android:layout_marginTop="@dimen/cpa_logo_vsep"
+               android:layout_height="1dip" android:layout_centerHorizontal="true" />
+
+    <ImageView
+            android:id="@+id/cpa_fnaclogo" android:layout_width="match_parent"
+               android:layout_height="wrap_content" android:src="@drawable/fnac"
+            android:layout_below="@id/cpa_samsunglogo" android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/cpa_logo_vsep"
+             android:layout_toLeftOf="@id/cpa_dummy_sep"
+            />
+
+    <ImageView
+            android:id="@+id/cpa_tmnlogo" android:layout_width="match_parent"
+               android:layout_height="wrap_content" android:src="@drawable/tmn"
+            android:layout_below="@id/cpa_samsunglogo" android:layout_toRightOf="@id/cpa_dummy_sep"
+            android:layout_marginTop="@dimen/cpa_logo_vsep"
+            />
+
+</RelativeLayout>
+

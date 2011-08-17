@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="cpa_logo_vsep">20dip</dimen>
+    <dimen name="cpa_title_size">20dip</dimen>
+    <dimen name="cpa_disclamer_size">15dip</dimen>
+    <dimen name="cpa_logo_size">250dip</dimen>
+    <dimen name="cpa_logo_size_land">180dip</dimen>
+    <dimen name="cpa_logos_h_sep">7dip</dimen>
+    <dimen name="cpa_logo_samsung_width">170dip</dimen>
+</resources>
