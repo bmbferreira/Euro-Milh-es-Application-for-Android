@@ -1,55 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
 	android:weightSum="1" android:background="@drawable/eurowallpaper"
 	android:orientation="vertical" android:gravity="center">
-	<TextView android:textColor="@color/Blue"
-		android:text="Estatísticas (nº da bola -&gt; vezes que já saiu)"
-		android:gravity="center" android:textStyle="bold"
-		android:layout_gravity="center_vertical" android:textAppearance="?android:attr/textAppearanceMedium"
-		android:id="@+id/textViewTitle" android:layout_height="wrap_content"
-		android:layout_width="fill_parent" android:layout_marginBottom="10dp"></TextView>
 	<ScrollView android:id="@+id/scrollView1"
-		android:layout_width="fill_parent" android:gravity="center" android:layout_height="175dp">
+		android:layout_width="fill_parent" android:gravity="center"
+		android:layout_height="wrap_content" android:layout_weight=".70">
 		<LinearLayout android:id="@+id/linearLayout1"
 			android:layout_width="fill_parent" android:layout_height="fill_parent"
-			android:orientation="horizontal" android:gravity="center">
-			<TextView android:text="" android:textAppearance="?android:attr/textAppearanceMedium"
-				android:id="@+id/textView1" android:layout_height="wrap_content"
-				android:layout_gravity="center_vertical" android:layout_width="wrap_content"
-				android:textColor="@color/Blue" android:gravity="center"></TextView>
-			<TextView android:text=" -> " android:layout_width="wrap_content"
-				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:id="@+id/textView2" android:layout_height="wrap_content"
-				android:textStyle="bold" android:gravity="center"></TextView>
-			<TextView android:text="" android:layout_width="wrap_content"
-				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:id="@+id/textView3" android:layout_height="wrap_content"
-				android:gravity="center"></TextView>
+			android:weightSum="1" android:orientation="vertical">
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/tableRow01"
+				android:gravity="center">
+				<TextView android:textColor="@color/Blue"
+					android:text="Estatísticas (nº da bola -&gt; vezes que já saiu)"
+					android:gravity="center" android:textStyle="bold"
+					android:layout_gravity="center_vertical" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/textViewTitle" android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:layout_marginBottom="10dp"
+					android:layout_marginTop="10dp"></TextView>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/tableRow02"
+				android:gravity="center">
+				<TextView android:text="" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/textView1" android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical" android:layout_width="wrap_content"
+					android:textColor="@color/Blue" android:gravity="center"></TextView>
+				<TextView android:text=" -> " android:layout_width="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/textView2" android:layout_height="wrap_content"
+					android:textStyle="bold" android:gravity="center"></TextView>
+				<TextView android:text="" android:layout_width="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/textView3" android:layout_height="wrap_content"
+					android:gravity="center"></TextView>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/tableRow03"
+				android:gravity="center">
+				<TextView android:layout_width="fill_parent"
+					android:layout_gravity="center_vertical" android:textStyle="bold"
+					android:id="@+id/textViewStars" android:textColor="@color/yellow_Star"
+					android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp"
+					android:text="Estrelas" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:gravity="center"></TextView>
+			</TableRow>
+			<TableRow android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/tableRow04"
+				android:gravity="center">
+				<TextView android:text="" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/textView4" android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical" android:layout_width="wrap_content"
+					android:textColor="@color/yellow_Star" android:gravity="center"></TextView>
+				<TextView android:text=" -> " android:layout_width="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/textView5" android:layout_height="wrap_content"
+					android:textStyle="bold" android:gravity="center"></TextView>
+				<TextView android:text="" android:layout_width="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:id="@+id/textView6" android:layout_height="wrap_content"
+					android:gravity="center"></TextView>
+			</TableRow>
 		</LinearLayout>
 	</ScrollView>
-	<TextView android:textColor="@color/yellow_Star" android:text="Estrelas"
-		android:gravity="center" android:textStyle="bold"
-		android:layout_gravity="center_vertical" android:textAppearance="?android:attr/textAppearanceMedium"
-		android:id="@+id/textViewStars" android:layout_width="fill_parent" android:layout_marginBottom="10dp" android:layout_height="wrap_content"></TextView>
-	<ScrollView android:id="@+id/scrollView2"
-		android:layout_width="fill_parent" android:layout_height="fill_parent">
-		<LinearLayout android:gravity="center" android:id="@+id/linearLayout2"
-			android:layout_width="fill_parent" android:layout_height="fill_parent">
-			<TextView android:text="" android:textAppearance="?android:attr/textAppearanceMedium"
-				android:id="@+id/textView4" android:layout_height="wrap_content"
-				android:layout_gravity="center_vertical" android:layout_width="wrap_content"
-				android:textColor="@color/yellow_Star" android:gravity="center"></TextView>
-			<TextView android:text=" -> " android:layout_width="wrap_content"
-				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:id="@+id/textView5" android:layout_height="wrap_content"
-				android:textStyle="bold" android:gravity="center"></TextView>
-			<TextView android:text="" android:layout_width="wrap_content"
-				android:textAppearance="?android:attr/textAppearanceMedium"
-				android:id="@+id/textView6" android:layout_height="wrap_content"
-				android:gravity="center"></TextView>
-		</LinearLayout>
-	</ScrollView>
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_width="fill_parent" ads:adUnitId="a14e610680df0e0"
+		ads:adSize="BANNER" ads:loadAdOnCreate="true" android:layout_height="wrap_content"
+		android:layout_marginBottom="23dp"></com.google.ads.AdView>
 
 
 

@@ -11,6 +11,9 @@ import java.io.StreamCorruptedException;
 import java.util.Iterator;
 import java.util.TreeSet;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -69,7 +72,13 @@ public class Statistics extends Activity implements Runnable{
 
 		//setting the R.layout.statistics, referencing the file statistics.xml
 		setContentView(R.layout.statistics);
-
+		
+		// Look up the AdView as a resource and load a request.
+		AdView adView = (AdView)this.findViewById(R.id.adView);
+		AdRequest request = new AdRequest();
+		request.setTesting(false);
+		adView.loadAd(request);
+		
 		//Initializing the strings
 		text1 = new String();
 		text2 = new String();

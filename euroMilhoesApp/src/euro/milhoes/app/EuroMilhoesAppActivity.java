@@ -29,8 +29,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.google.ads.*;
 
 /**
  * EuroMilhoesAppActivity.java
@@ -41,6 +43,8 @@ import android.widget.Toast;
  */
 //date format: mm/dd/yy
 public class EuroMilhoesAppActivity extends Activity implements Runnable, OnClickListener{
+
+	private AdView adView;//adView, for ads
 
 	//Buttons to generate a key, to show statistics and to update the data of the app
 	private Button gerarChave, estatisticas, actualizar, about;
@@ -57,6 +61,13 @@ public class EuroMilhoesAppActivity extends Activity implements Runnable, OnClic
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+		
+		// Look up the AdView as a resource and load a request.
+		AdView adView = (AdView)this.findViewById(R.id.adView);
+		AdRequest request = new AdRequest();
+		request.setTesting(false);
+		adView.loadAd(request);
+		
 		try {
 
 			/*This file is used to store the result of the last draw*/
@@ -237,7 +248,7 @@ public class EuroMilhoesAppActivity extends Activity implements Runnable, OnClic
 		//Button to update the data of the application.
 		this.actualizar = (Button) this.findViewById(R.id.button3);
 		actualizar.setOnClickListener(this);
-		
+
 		//A button to see the "About" section
 		this.about = (Button)this.findViewById(R.id.button4);
 		//Also a listener to the button.
@@ -342,7 +353,7 @@ public class EuroMilhoesAppActivity extends Activity implements Runnable, OnClic
 		 */
 		if(res != null && dma !=null && ballStats != null && starStats != null ){	
 			try {
-				
+
 				/* In this "block" of code we get the two files that contains the statistics
 				 * and we update them, but once we're not in the "statistics layout", we just
 				 * save them in the correct files and we do nothing more.*/
@@ -352,7 +363,7 @@ public class EuroMilhoesAppActivity extends Activity implements Runnable, OnClic
 				FileOutputStream fosStars = openFileOutput(estrelasStats.getName(), Context.MODE_PRIVATE);
 				FileDealer.storeData(ballStats, fosBalls);
 				FileDealer.storeData(starStats, fosStars);
-				
+
 				/* Then, we get (or create, whatever) the file to store the result and other file to store
 				 * the date of the draw. We initialize the two strings, 'b' and 's', to store the 
 				 * normal balls' numbers and the stars' numbers respectively, with some spaces
@@ -436,7 +447,7 @@ public class EuroMilhoesAppActivity extends Activity implements Runnable, OnClic
 		}
 
 	};
-	
+
 	/**
 	 * Alert message to be shown when an exception occurs.
 	 */
@@ -452,7 +463,7 @@ public class EuroMilhoesAppActivity extends Activity implements Runnable, OnClic
 		})
 		.show();
 	}
-	
+
 	/**
 	 * Alert message to be shown (normally) when the device is not connected to 
 	 * internet, and the user tried to update the application.
@@ -469,7 +480,7 @@ public class EuroMilhoesAppActivity extends Activity implements Runnable, OnClic
 		})
 		.show();
 	}
-	
+
 	/**
 	 * Little message to be shown when a successfully update occurs.
 	 */
