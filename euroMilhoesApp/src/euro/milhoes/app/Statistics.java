@@ -19,6 +19,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -271,6 +272,14 @@ public class Statistics extends Activity implements Runnable{
 			Thread thread = new Thread(this);
 			thread.start();
 
+			break;
+		case R.id.icontext2:
+			/*With a click in this button we create a new Intent, which will lead us to a new
+			 * "part" of the application*/
+			Intent aboutCPA = new Intent();
+			aboutCPA.setClass(Statistics.this,AboutCPA.class);
+			aboutCPA.putExtra("extra_dev_name","Bruno Ferreira");
+			startActivity(aboutCPA); 
 			break;
 		}
 		return true;

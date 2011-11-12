@@ -330,6 +330,14 @@ public class EuroMilhoesAppActivity extends Activity implements Runnable, OnClic
 			thread.start();
 
 			break;
+		case R.id.icontext2:
+			/*With a click in this button we create a new Intent, which will lead us to a new
+			 * "part" of the application*/
+			Intent aboutCPA = new Intent();
+			aboutCPA.setClass(EuroMilhoesAppActivity.this,AboutCPA.class);
+			aboutCPA.putExtra("extra_dev_name","Bruno Ferreira");
+			startActivity(aboutCPA); 
+			break;
 		}
 		return true;
 	}
